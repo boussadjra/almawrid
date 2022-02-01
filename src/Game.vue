@@ -13,7 +13,10 @@
   <header>
     <nav dir="rtl" class="flex items-center justify-between w-full h-16 px-8">
       <h1 class="font-bold text-green-600">المورد</h1>
+<p>
+خمن مفردة من القرآن الكريم 
 
+</p>
       <div>
         <button @click="changeColorMode">
           <IconSun v-if="colorMode == 'light'" />
