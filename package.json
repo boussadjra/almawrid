@@ -1,0 +1,20 @@
+{
+  "name": "almawrid",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --port 8080 --host 192.168.43.216",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.18",
+    "vite": "^2.7.2",
+    "vite-plugin-pwa": "^0.11.13"
+  }
+}
