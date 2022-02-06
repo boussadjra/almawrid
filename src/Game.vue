@@ -147,15 +147,20 @@ onUnmounted(() => {
 })
 
 function onKey(key: string) {
+     console.log('-----enter---------------')
+    console.log(key)
+    console.log('--------------------')
   let arabic = /[\u0600-\u06FF]/g
   if (!allowInput) return
-  if (key.match(arabic)) {
+ 
+   if (key === 'إدخال') {
+ 
+    completeRow()
+  }  else if (key.match(arabic)) {
     fillTile(key.toLowerCase())
   } else if (key === 'Backspace') {
     clearTile()
-  } else if (key === 'Enter') {
-    completeRow()
-  }
+  } 
 }
 
 function fillTile(letter: string) {
